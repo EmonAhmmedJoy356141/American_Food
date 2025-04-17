@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>american foood</title>
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+	  <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- search part start -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 d-md-block d-none">
+                <div class="form">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </div>
+              </div>
+              <!-- search part end -->
+               <!-- logo part start -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                  <div class="logo text-lg-center text-md-center text-start">
+                    <a class="navbar-brand" href="#"><img src="image/logo.png" alt="american"></a>
+                  </div>
+                </div>
+                <!-- logo part end -->
+                 <!-- Register part start -->
+                 <div class="col-lg-4 col-md-4  col-sm-6 col-6"> 
+                  <div class="reg text-sm-end">
+                    <nav class="navbar navbar-expand">
+                      <div class="container-fluid p-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#custom_navbar" aria-controls="custom_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse custom custom_button" id="custom_navbar">
+                          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <button type="button" class=" me-2 p-0" data-bs-toggle="modal" data-bs-target="#registerModal">
+                                Register
+                              </button>
+                            </li>
+                            <li class="nav-item">
+                              <button type="button" class=" me-2 p-0" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                Login
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <!-- Register modal part start -->
+                        <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                               <h5 class="modal-title m-0 p-0">Register</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <!-- modal Form part start -->
+                                <form>
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      <div class="row">
+                                        <div class="col-lg-6">
+                                          <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput_1" required>
+                                             <label for="floatingInput_1">First Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput_2" required>
+                                             <label for="floatingInput_2">Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-floating mb-3">
+                                            <input type="date" class="form-control" id="floatingInput_3" required>
+                                             <label for="floatingInput_3">Date of Birth</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 text-start">
+                                          <label for="floatingInput_4" style="color: black;">Gender</label> 
+                                             <div class="form-floating mb-3">
+                                              <ul class="list-inline">
+                                                <li class="list-inline-item">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
+                                                    <label class="form-check-label" style="color: black;" for="flexRadioDefault1">
+                                                      Female
+                                                    </label>
+                                                  </div>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+                                                    <label class="form-check-label" style="color: black;" for="flexRadioDefault2">
+                                                      Male
+                                                    </label>
+                                                  </div>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" required>
+                                                    <label class="form-check-label" style="color: black;" for="flexRadioDefault3">
+                                                      Custom
+                                                    </label>
+                                                  </div>
+                                                </li>
+                                              </ul>
+                                             </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="floatingInput_5" required>
+                                             <label for="floatingInput_5">Enter your valid email address</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                          <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingInput_6" required>
+                                             <label for="floatingInput_6">Create new password</label>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 <button type="submit" class="custom_button p-2 rounded-2 w-100">Register</button>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button class="btn btn-primary w-100" data-bs-target="#loginModal" data-bs-toggle="modal">Already have an account</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- log in modal part -->
+
+                        <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+                          <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Login</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                        <div class="modal-body">
+                        <form>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput_7" required>
+                                 <label for="floatingInput_7">Enter your valid email address</label>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingInput_8" required>
+                                 <label for="floatingInput_8">Enter your password</label>
+                                </div>
+                            </div>
+                          </div>
+                          <button type="submit" class="custom_button p-2 rounded-2 w-100">Login</button>
+                                    </form>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-primary w-100" data-bs-target="#registerModal" data-bs-toggle="modal">Create a new account</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </nav>
+                  </div>
+                 </div>
+                 <!-- Register part end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+<!-- header 2nd part -->
+    <section class="nav_menu">
+     <div class="container">
+      <!-- nav bar 2nd part -->
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_nav_1" aria-controls="offcanvas_nav_1" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvas_nav_1" aria-labelledby="offcanvas_nav_1Label">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- menu item part  -->
+            <div class="offcanvas-body menu_item_1">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about us">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex d-md-none" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+     </div>
+    </section>
+    <!-- banner part start -->
+    <!-- Slider part start -->
+    <section class="slider banner" id="slider">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Carousel part -->
+            <div id="carousel_c" class="carousel slide">
+              <div class="carousel-indicators c_ind">
+                <button type="button" data-bs-target="#carousel_c" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel_c" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <!-- inner part -->
+              <div class="carousel-inner">
+                <!-- item part -->
+                <div class="carousel-item active">
+                  <!-- 1st row -->
+                  <div class="row">
+                    <!-- slider text -->
+                    <div class=" col-lg-4 col-md-5 col-sm-12 col-12">
+                      <div class="banner_text service_banner_text">
+                        <h3>Special</h3>
+                        <h1>American Food</h1>
+                        <h2 class="m-0">The Best Taste Food</h2>
+                        <p>Lorem Ipsum available, but the majority have suffered some form, by injected humour, or randomised words of Lorem Ipsum, you need to be sure.</p>
+                        <div class="order_now">
+                          <a  class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">ORDER NOW</a>
+                          <a href="#" class="focus-ring focus-ring-success"><i class="fa-solid fa-arrow-left"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slider image -->
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-7 col-sm-12 col-12 p-0 d-md-block d-none">
+                      <div class="banner_image w-100 h-100"><img class="img-fluid w-100 h-100" src="image/banner.png" alt="american"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 3rd slide -->
+                <div class="carousel-item ">
+                  <!-- 1st row -->
+                  <div class="row">
+                    <!-- slider text -->
+                    <div class="col-lg-4 col-md-5 col-12 order-md-1 order-2">
+                      <div class="service_banner_text banner_text">
+                        <h3>Special</h3>
+                        <h1>SALE 50% DISCOUNT</h1>
+                        <h2>ALL FOOD PRODUCTS</h2>
+                        <p>Lorem Ipsum available, but the majority have suffered some form, by injected humour, or randomised words of Lorem Ipsum, you need to be sure.</p>
+                        <div class="order_now">
+                          <a class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">DISCOVER NOW</a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slider image -->
+                    <div class=" col-lg-8 col-md-7 col-12 order-md-2 p-0 d-md-block d-none">
+                      <div class="banner_image w-100 h-100"><img class="img-fluid w-100 h-100" src="image/banner-3_new_background_rgb_243_243_243.png" alt="american"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- banner part end -->
+     <!-- about us part -->
+      <section class="about_us c_top_padding" id="about us">
+        <div class="container">
+          <!-- about text -->
+          <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="row justify-content-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 text-center">
+                  <div class="about_text">
+                    <h1>About us</h1>
+                    <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- about image part -->
+           <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="about_wrapper">
+                <div class="row">
+                  <!-- image_text part -->
+                  <div class=" image_swap col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 ">
+                    <div class="image_text">
+                      <h2 class="m-0">Let food be thy medicine medicine be thy food.</h2>
+                      <p>Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour randomise words which don't look even slightly believable. If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                      <div class="order_now">
+                        <a  class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">Read More</a>
+                        <a class="focus-ring focus-ring-success" href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- image part -->
+                  <div class=" offset-lg-1 col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-end">
+                    <div class="about_image blog_image">
+                      <img class="img-fluid" src="image/ytb1.png" alt="american">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about_wrapper">
+                <div class="row">
+                  <!-- image_text part -->
+                  <div class=" col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-end">
+                    <div class="about_image blog_image">
+                      <img class="img-fluid" src="image/ytb1.png" alt="american">
+                    </div>
+                  </div>
+                  <!-- image part -->
+                  <div class=" offset-lg-1 col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12 ">
+                    <div class="image_text">
+                      <h2 class="m-0">Let food be thy medicine medicine be thy food.</h2>
+                      <p>Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour randomise words which don't look even slightly believable. If you are going to use a passage Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                      <div class="order_now">
+                        <a  class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">Read More</a>
+                        <a class="focus-ring focus-ring-success" href="#"><i class="fa-solid fa-arrow-left"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+    <!-- about us end -->
+     <!-- service part -->
+     <section class="service c_top_padding" id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="row justify-content-center">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 text-center">
+                <div class="about_text">
+                  <h1>Service</h1>
+                  <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="service_wrapper">
+              <div class="row">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 order-md-1 order-2">
+                  <div class="service_text">
+                    <div class="d-flex justify-content-between align-items-center price">
+                      <h1 class="m-0 text-center">Peanut butter</h1>
+                      <span>$45</span>
+                    </div>
+                    <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
+                    <div class="order_now">
+                      <a class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">BUY NOW</a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" offset-md-1 col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12 order-md-1 order-1 text-center">
+                  <div class="service_image  blog_image">
+                    <img class="img-fluid" src="image/service-1.png" alt="american">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="service_wrapper">
+              <div class="row">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 order-md-1 order-2">
+                  <div class="service_text">
+                    <div class="d-flex justify-content-between price">
+                      <h1 class="m-0">Pumpkin pie</h1>
+                      <span>$35</span>
+                    </div>
+                    <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
+                    <div class="order_now">
+                      <a class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">BUY NOW</a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" offset-md-1 col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12 order-md-1 order-1 text-center">
+                  <div class="service_image blog_image">
+                    <img class="img-fluid" src="image/service-2.png" alt="american">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service_wrapper">
+              <div class="row">
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12 order-md-1 order-2">
+                  <div class="service_text">
+                    <div class="d-flex justify-content-between price">
+                      <h1 class="m-0">Jambalaya</h1>
+                      <span>$50</span>
+                    </div>
+                    <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure</p>
+                    <div class="order_now">
+                      <a class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">BUY NOW</a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" offset-md-1 col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12 order-md-1 order-1 text-center">
+                  <div class="service_image blog_image">
+                    <img class="img-fluid" src="image/service-3.png" alt="american">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+      <!-- Pricing part -->
+       <section class="price_part c_top_padding" id="pricing">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="row justify-content-center">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 text-center">
+                      <div class="about_text service_text1">
+                        <h1>Pricing</h1>
+                        <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-md-4 col-12">
+                  <div class="bg text-sm-center">
+                    <img class="img-fluid w-100 h-100" src="image/bg.png" alt="american">
+                    <div class="text_1">
+                      <h1 class="m-0">Basic</h1>
+                      <span>$35</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="bg text-sm-center">
+                    <img class="img-fluid w-100 h-100" src="image/bg_2.png" alt="american">
+                    <div class="bg_text">
+                      <h1 class="m-0">Standard</h1>
+                      <span>$50</span>
+                    </div>
+                    <div class="hot">
+                      <h3 class="mb-0">Hot</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="bg text-sm-center">
+                    <img class="img-fluid w-100 h-100" src="image/bg.png" alt="american">
+                    <div class="bg_text">
+                      <h1 class="m-0">Premium</h1>
+                      <span>$45</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+        <!-- price part end -->
+        <!-- blog part start -->
+         <section class="blog c_top_padding" id="blog">
+          <div class="container">
+            <div class="row">
+              <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="row justify-content-center">
+                      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12 text-center">
+                        <div class="about_text service_text1">
+                          <h1>Blog</h1>
+                          <p class="m-0">Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour</p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-md-4 col-12">
+                    <div class="blog_image w-100 h-100">
+                      <img class="img-fluid w-100 h-100" src="image/blog.png" alt="american">
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class=" blog_text">
+                      <h2 class="mb-0">Eat food. Not too much mostly plants.</h2>
+                      <p>Lorem Ipsum available, but the majority have suffered alteratio some form, by injected humou randomised words.</p>
+                      <div class="order_now">
+                        <a  class="me-2 text-decoration-none focus-ring focus-ring-success" href="#">ORDER NOW</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <div class="blog_image w-100 h-100">
+                      <img class="img-fluid w-100 h-100" src="image/blog2.png" alt="american">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </section>
+         <!-- Footer part -->
+        <footer id="contact">
+          <section class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="offset-md-4 col-md-4 col-12 justify-content-center">
+                      <div class="logo text-center">
+                        <a class="navbar-brand" href="#"><img src="image/logo.png" alt="american"></a>
+                      </div>
+                      <div class="footer_text text-center">
+                        <h1>American Food</h1>
+                        <h2 class="mb-0">The Best Taste Food</h2>
+                      </div>
+                      <!-- footer text part end -->
+                          <div class="icon text-center">
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                           <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-whatsapp me-0"></i></a>
+                        </div>
+                        <div class="footer_text text-center">
+                          <h2 class="mb-0">yourwebsite.com</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
